@@ -1,85 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title> Site Dinâmico </title>
-	
-	<style>
-		input {
-			width: 200px;
-			display: block;
-		}
-		p{
-			margin-bottom: -1px;
-		}
-	</style>
+  <meta charset='utf-8'>
+  <title>Avaliação de resultados</title>
+  
+  <style>
+    br {
+      line-height: 220%;
+     }
+  
+    form{
+      width: 40%;
+			margin: 0 auto;
+    }
+      
+  </style>
 </head>
 
 <body>
-	<h3>Cadastro</h3>
-	<form  action='saida.php' method='POST'>
-	
-	<p>Nome da banda:</p>
-	<input type='text' name='nomeDaBanda'>
-	
-	<p><em>Link</em> para imagem:</p>
-	<input type='text' name='linkParaImagem'>
-	
-	<p><strong>Integrante1</strong> - nome:</p>
-	<input type='text' name='integrante1Nome'>
-	
-	<p><strong>Integrante1</strong> - data de nascimento:</p>
-	<input type='text' name='integrante1DataDeNascimento'>
-	
-	<p><strong>Integrante1</strong> - instrumento:</p>
-	<input type='text' name='integrante1Instrumento'>
+  <form action="saida.php" method="POST">
+  
+    <h3>Avaliação de resultados</h3>
+    
+    Nome do Aluno: <input type='text' name='nomeAluno'><br>
+    
+    Nome da disciplina: <input type='text' name='nomeDisciplina'><br>
+    
+    Nome do curso: <input type='text' name='nomeCurso'><br>
+    
+    <i>Link</i> para a logomarca da faculdade: <input type='text' name='linkImagem'><br>
 
-	<p><strong>Integrante2</strong> - nome:</p>
-	<input type='text' name='integrante2Nome'>
-	
-	<p><strong>Integrante2</strong> - data de nascimento:</p>
-	<input type='text' name='integrante2DataDeNascimento'>
-	
-	<p><strong>Integrante2</strong> - instrumento:</p>
-	<input type='text' name='integrante2Instrumento'>
-
-	<p><strong>Integrante3</strong> - nome:</p>
-	<input type='text' name='integrante3Nome'>
-	
-	<p><strong>Integrante3</strong> - data de nascimento:</p>
-	<input type='text' name='integrante3DataDeNascimento'>
-	
-	<p><strong>Integrante3</strong> - instrumento:</p>
-	<input type='text' name='integrante3Instrumento'>	
-	
-	<p>Biografia da banda</p>
-	<textarea rows="25"
-			  cols="70"
-			  name='biografiaDaBanda'>
-	</textarea>
-	
-	<p>Cor de fundo da pagina</p>
-	<select name='corFundo' id='corFundo'>
-		<option value='blue'>Azul</option>
-		<option value='yellow'>Amarelo</option>
-		<option value='white'>Branco</option>
-		<option value='black'>Preto</option>
-		<option value='green'>Verde</option>
-		<option value='red'>Vermelho</option>
-	</select>
-	
-	<p>Cor do texto da pagina</p>
-	<select name='corTexto' id='corTexto'>
-		<option value='blue'>Azul</option>
-		<option value='yellow'>Amarelo</option>
-		<option value='white'>Branco</option>
-		<option value='black'>Preto</option>
-		<option value='green'>Verde</option>
-		<option value='red'>Vermelho</option>
-	</select>
-	
-	<input type='submit' value='Gerar Pagina'>	
-
+    Nota da VA1 (0-15): <input type='text' name='nota1'><br>
+    
+    Nota da VA2 (0-25): <input type='text' name='nota2'><br>
+    
+    Nota da VA3 (0-35): <input type='text' name='nota3'><br>
+    
+    Nota dos trabalhos (0-25): <input type='text' name='notaTrabalho'><br>
+    
+    Nome do(a) professor(a): <input type='text' name='nomeProfessor'><br>
+    
+    Nome do(a) coordenador(a): <input type='text' name='nomeCoordenador'><br>
+    
+    <input type="submit" value="Enviar">
+  </form>    
 </body>
+
 
 </html>
