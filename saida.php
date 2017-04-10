@@ -57,6 +57,14 @@
       $notaTrabalho     = $_POST['notaTrabalho'];
       $nomeProfessor    = $_POST['nomeProfessor'];
       $nomeCoordenador  = $_POST['nomeCoordenador'];
+	  $lado				= $_POST['lado'];
+	  $perimetro = '0';
+	  $area = '0';
+	  
+	  $perimetro = $lado * 4;
+	  
+	  $area = $lado * $lado;
+	  
       
 	  $aprovado = " "; 
       $notaFinal = $nota1 + $nota2 + $nota3 + $notaTrabalho;
@@ -93,7 +101,7 @@
     <div class="container">
     
       <figure align='middle'>
-        <img src="logo.jpg"
+        <img src="<?php echo $linkImagem ?>"
              alt="Promove"
              title="Promove"
 			 height="120" 
@@ -163,6 +171,14 @@
 
 	  <p class='centro'><span>_________________________________________<br></span>
 		<?php echo $nomeCoordenador;?> - Coordenador(a)
+	  </p>
+	  
+	  <p class='centro'>
+	  O Perimetro: <?php echo $perimetro ?>	  
+	  </p>
+	  
+	  <p class='centro'>
+	  A Area: <?php echo $area ?>	  
 	  </p>
     </div>
   </body>
